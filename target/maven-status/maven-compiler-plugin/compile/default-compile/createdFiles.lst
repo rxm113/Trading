@@ -1,2 +1,6 @@
+enums/TradeType.class
 startup/App.class
 com/uk/trading/models/Stock.class
+com/uk/trading/models/Price.class
+com/uk/trading/models/Trade.class
+com/uk/trading/models/Document.class

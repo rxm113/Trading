@@ -13,8 +13,8 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="Article")
-public class Article implements Serializable {
+@Table(name="documents")
+public class Document implements Serializable {
 
 	/**
 	 * 
@@ -23,7 +23,7 @@ public class Article implements Serializable {
 
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
-    @Column(name="article_id", precision=0)
+    @Column(name="document_id", precision=0)
 	private int id = 0;
 	
 	private String name;
@@ -34,7 +34,13 @@ public class Article implements Serializable {
 	
 	@ManyToOne(cascade = CascadeType.ALL)
 	private Stock stock;
-
+	
+	@ManyToOne(cascade = CascadeType.ALL)
+	private Trade trade;
+	
+	@ManyToOne(cascade = CascadeType.ALL)
+	private Price price;
+	
 	public int getId() {
 		return id;
 	}
@@ -73,6 +79,22 @@ public class Article implements Serializable {
 
 	public void setDate(Date date) {
 		this.date = date;
+	}
+
+	public Trade getTrade() {
+		return trade;
+	}
+
+	public void setTrade(Trade trade) {
+		this.trade = trade;
+	}
+
+	public Price getPrice() {
+		return price;
+	}
+
+	public void setPrice(Price price) {
+		this.price = price;
 	}
 	
 	

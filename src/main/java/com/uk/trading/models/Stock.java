@@ -15,7 +15,7 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="Stocks")
+@Table(name="stocks")
 public class Stock implements Serializable{
 
 	
@@ -34,7 +34,13 @@ public class Stock implements Serializable{
 	private Date addedDate;
 	
 	@OneToMany(fetch = FetchType.LAZY, mappedBy = "stock")
-	private Set<Article> articles = new HashSet<Article>();
+	private Set<Document> documents = new HashSet<Document>();
+	
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "stock")
+	private Set<Price> prices = new HashSet<Price>();
+	
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "stock")
+	private Set<Trade> trades = new HashSet<Trade>();
 
 	public int getId() {
 		return id;
@@ -58,6 +64,30 @@ public class Stock implements Serializable{
 
 	public void setAddedDate(Date addedDate) {
 		this.addedDate = addedDate;
+	}
+
+	public Set<Price> getPrices() {
+		return prices;
+	}
+
+	public void setPrices(Set<Price> prices) {
+		this.prices = prices;
+	}
+
+	public Set<Document> getDocuments() {
+		return documents;
+	}
+
+	public void setDocuments(Set<Document> documents) {
+		this.documents = documents;
+	}
+
+	public Set<Trade> getTrades() {
+		return trades;
+	}
+
+	public void setTrades(Set<Trade> trades) {
+		this.trades = trades;
 	}
 	
 	

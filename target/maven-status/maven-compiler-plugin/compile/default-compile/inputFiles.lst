@@ -1,2 +1,6 @@
-/Users/robertminford/git/trading-data-fetch/src/main/java/com/uk/trading/models/Stock.java
-/Users/robertminford/git/trading-data-fetch/src/main/java/startup/App.java
+/Users/robertminford/git/Trading2/src/main/java/com/uk/trading/models/Document.java
+/Users/robertminford/git/Trading2/src/main/java/startup/App.java
+/Users/robertminford/git/Trading2/src/main/java/enums/TradeType.java
+/Users/robertminford/git/Trading2/src/main/java/com/uk/trading/models/Price.java
+/Users/robertminford/git/Trading2/src/main/java/com/uk/trading/models/Trade.java
+/Users/robertminford/git/Trading2/src/main/java/com/uk/trading/models/Stock.java

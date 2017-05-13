@@ -1,4 +1,4 @@
-package startup;
+package com.uk.trading.startup;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -7,8 +7,7 @@ import javax.persistence.Persistence;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
-import com.uk.trading.models.Article;
-import com.uk.trading.models.Stock;
+import com.uk.trading.data_fetch_modules.StockPriceFetch;
 
 public class App {
 
@@ -18,10 +17,7 @@ public class App {
 		EntityManagerFactory emf = Persistence.createEntityManagerFactory("persistence-unit");
 		EntityManager em = emf.createEntityManager();
 		
-		
-		Article article = new Article();
-		article.setContent("hekllo");
-		
+	
 //		
 //		Stock stock = new Stock();
 //		stock.setName("Tesla");
@@ -35,14 +31,12 @@ public class App {
 //		session.save(stock);
 //		tx.commit();
 //		em.close();
-		
+		StockPriceFetch s = new StockPriceFetch();
+		s.getStockPriceFromCSV("/Users/robertminford/Downloads/tsla.csv");
 		
 		Session session = em.unwrap(Session.class);
 		Transaction tx = session.beginTransaction();
 		
-		Stock stock = (Stock) session.get(Stock.class, 1);
-		article.setStock(stock);
-		session.save(article);
 		tx.commit();
 		em.close();
 		
