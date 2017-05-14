@@ -9,6 +9,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Lob;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
@@ -26,8 +27,10 @@ public class Document implements Serializable {
     @Column(name="document_id", precision=0)
 	private int id = 0;
 	
-	private String name;
+	private String title;
 	
+	@Lob
+	@Column( length = 100000 )
 	private String content;
 	
 	private Date date;
@@ -47,14 +50,6 @@ public class Document implements Serializable {
 
 	public void setId(int id) {
 		this.id = id;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
 	}
 
 	public String getContent() {
@@ -95,6 +90,14 @@ public class Document implements Serializable {
 
 	public void setPrice(Price price) {
 		this.price = price;
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
 	}
 	
 	

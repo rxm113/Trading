@@ -1,6 +1,13 @@
-enums/TradeType.class
-startup/App.class
-com/uk/trading/models/Stock.class
-com/uk/trading/models/Price.class
+com/uk/trading/utils/PropertiesValue.class
+com/uk/trading/managers/StockManager.class
+com/uk/trading/interfaces/Capture.class
 com/uk/trading/models/Trade.class
+com/uk/trading/data_fetch_modules/StockPriceFetch.class
+com/uk/trading/data_watch_modules/TwitterCapture.class
+com/uk/trading/models/Stock.class
+com/uk/trading/data_fetch_modules/TwitterFetch.class
+com/uk/trading/models/Price.class
+com/uk/trading/data_watch_modules/NewsCapture.class
+com/uk/trading/enums/TradeType.class
+com/uk/trading/startup/App.class
 com/uk/trading/models/Document.class

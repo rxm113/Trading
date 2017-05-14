@@ -1,7 +1,7 @@
 package com.uk.trading.models;
 
 import java.io.Serializable;
-import java.sql.Date;
+import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -30,7 +30,7 @@ public class Price implements Serializable{
     @Column(name="pricedd_id", precision=0)
 	private int id = 0;
 	
-	private String name;
+	private double fluctuation;
 	
 	private Date date;
 	
@@ -58,14 +58,6 @@ public class Price implements Serializable{
 
 	public void setId(int id) {
 		this.id = id;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
 	}
 
 	public boolean isPositive() {
@@ -138,6 +130,14 @@ public class Price implements Serializable{
 
 	public void setVolume(int volume) {
 		this.volume = volume;
+	}
+
+	public double getFluctuation() {
+		return fluctuation;
+	}
+
+	public void setFluctuation(double fluctuation) {
+		this.fluctuation = fluctuation;
 	}
 	
 	

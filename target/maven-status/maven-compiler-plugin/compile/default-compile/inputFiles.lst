@@ -1,6 +1,13 @@
-/Users/robertminford/git/Trading2/src/main/java/com/uk/trading/models/Document.java
-/Users/robertminford/git/Trading2/src/main/java/startup/App.java
-/Users/robertminford/git/Trading2/src/main/java/enums/TradeType.java
-/Users/robertminford/git/Trading2/src/main/java/com/uk/trading/models/Price.java
+/Users/robertminford/git/Trading2/src/main/java/com/uk/trading/utils/PropertiesValue.java
+/Users/robertminford/git/Trading2/src/main/java/com/uk/trading/data_fetch_modules/TwitterFetch.java
+/Users/robertminford/git/Trading2/src/main/java/com/uk/trading/enums/TradeType.java
+/Users/robertminford/git/Trading2/src/main/java/com/uk/trading/interfaces/Capture.java
 /Users/robertminford/git/Trading2/src/main/java/com/uk/trading/models/Trade.java
+/Users/robertminford/git/Trading2/src/main/java/com/uk/trading/data_watch_modules/NewsCapture.java
+/Users/robertminford/git/Trading2/src/main/java/com/uk/trading/managers/StockManager.java
+/Users/robertminford/git/Trading2/src/main/java/com/uk/trading/startup/App.java
+/Users/robertminford/git/Trading2/src/main/java/com/uk/trading/models/Document.java
+/Users/robertminford/git/Trading2/src/main/java/com/uk/trading/models/Price.java
+/Users/robertminford/git/Trading2/src/main/java/com/uk/trading/data_fetch_modules/StockPriceFetch.java
+/Users/robertminford/git/Trading2/src/main/java/com/uk/trading/data_watch_modules/TwitterCapture.java
 /Users/robertminford/git/Trading2/src/main/java/com/uk/trading/models/Stock.java

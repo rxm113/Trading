@@ -35,12 +35,12 @@
 			<version>4.12</version>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/com.twitter/twitter-text -->
-		<dependency>
-			<groupId>com.twitter</groupId>
-			<artifactId>twitter-text</artifactId>
-			<version>1.14.3</version>
-		</dependency>
+		
+		 <dependency>
+           <groupId>org.twitter4j</groupId>
+           <artifactId>twitter4j-core</artifactId>
+           <version>[4.0,)</version>
+       </dependency>
 
 		<dependency>
 			<groupId>org.apache.commons</groupId>
