@@ -31,7 +31,7 @@ public class Stock implements Serializable{
 	
 	private String name;
 	
-	private Date addedDate;
+	private Date date;
 	
 	@OneToMany(fetch = FetchType.LAZY, mappedBy = "stock")
 	private Set<Document> documents = new HashSet<Document>();
@@ -58,12 +58,12 @@ public class Stock implements Serializable{
 		this.name = name;
 	}
 
-	public Date getAddedDate() {
-		return addedDate;
+	public Date getDate() {
+		return date;
 	}
 
-	public void setAddedDate(Date addedDate) {
-		this.addedDate = addedDate;
+	public void setDate(Date date) {
+		this.date = date;
 	}
 
 	public Set<Price> getPrices() {
